@@ -84,7 +84,7 @@
     border-radius: 5px;
     width: 23.5rem;
     height: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     user-select: none;
 }
 
@@ -99,16 +99,25 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    padding: 15px 20px 15px 20px;
+    padding: 20px 20px 20px 20px;
     border-radius: 10px;
     letter-spacing: 1px;
     transition: 0.5s;
+    margin-top: 1.5rem;
 }
 
 .email-form-submit:hover {
     transition: 0.5s;
     background-color:  hsl(4, 100%, 67%);
     cursor: pointer;
+}
+
+.error-email {
+    color: red;
+    font-size: 12px;
+    margin-left: 3px;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .right-section {
@@ -175,4 +184,56 @@
     transition: 0.5s;
     background-color:  hsl(4, 100%, 67%);
     cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+    .body {
+        background-color: white;
+    }
+
+    .email-register {
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .left-section {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .main-img {
+        width: 100vw;
+        margin-bottom: 2rem;
+    }
+
+    .right-section {
+        margin: 0;
+    }
+
+    .title-form {
+        font-size: 40px;
+    }
+
+    .title-phrase {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+
+    .email-form {
+        display: flex;
+        align-items: center;
+    }
+
+    .email-form-field {
+        width: 80vw;
+    }
+
+    .email-form-submit {
+        width: 84vw;
+    }
 }
